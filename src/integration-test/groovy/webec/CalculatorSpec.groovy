@@ -30,5 +30,6 @@ class CalculatorSpec extends GebSpec {
             $("a", text: "calculator").click()
         then:
             title == "Grade Calculator"
+
     }
 }
