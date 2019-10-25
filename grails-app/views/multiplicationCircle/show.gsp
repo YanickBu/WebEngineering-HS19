@@ -16,6 +16,7 @@
     </style>
     <script>
         function increase(valueName) {
+<<<<<<< HEAD
             let input = document.getElementById(valueName);
             input.value = parseInt(input.value) + 1 ;
         }
@@ -24,6 +25,16 @@
             let input = document.getElementById(valueName);
             input.value = parseInt(input.value) - 1;
         }
+=======
+            var input = document.getElementById(valueName);
+            input.value = Number(input.value) + 1 ;
+        }
+        function decrease(valueName) {
+            var input = document.getElementById(valueName);
+            input.value = Number(input.value) - 1 ;
+        }
+
+>>>>>>> fe2b3d73b95cbe00060c94d4d35cda36b98f2ac9
     </script>
 </head>
 <body>
