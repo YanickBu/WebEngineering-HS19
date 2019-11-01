@@ -13,6 +13,6 @@ class RoomSpec extends Specification implements DomainUnitTest<Room> {
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

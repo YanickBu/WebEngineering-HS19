@@ -11,8 +11,11 @@ class PersonSpec extends Specification implements DomainUnitTest<Person> {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void "construction and access"() {
+        given:
+           Person dierk = new Person(firstName: "Dierk", lastName: "König")
+        expect:"one can access the parameters in two ways"
+            dierk.firstName == "Dierk"
+            dierk.getFirstName() == "Dierk"
     }
 }

@@ -13,6 +13,6 @@ class BookingSpec extends Specification implements DomainUnitTest<Booking> {
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }

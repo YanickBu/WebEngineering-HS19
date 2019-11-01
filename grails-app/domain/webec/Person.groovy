@@ -1,16 +1,13 @@
 package webec
 
-import groovy.transform.ToString
-
 class Person {
     String firstName
     String lastName
 
-    static constraints = {
+    String toString() {
+        return firstName + " " + lastName
     }
 
-    @Override
-    String toString(){
-        return firstName + " " + lastName;
+    static constraints = {
     }
 }
