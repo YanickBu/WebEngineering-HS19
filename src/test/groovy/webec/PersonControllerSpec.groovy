@@ -11,8 +11,11 @@ class PersonControllerSpec extends Specification implements ControllerUnitTest<P
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void "construction and access"() {
+        given:
+            Person dierk = new Person(firstName: "Dierk", lastName: "König")
+        expect:"one can access the parameters"
+            dierk.firstName == "Dierk"
+            dierk.lastName == "König"
     }
 }

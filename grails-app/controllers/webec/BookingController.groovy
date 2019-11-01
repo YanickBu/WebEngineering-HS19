@@ -1,5 +1,5 @@
 package webec
 
-class RoomController {
-    static scaffold = Room
+class BookingController {
+    static scaffold = Booking
 }

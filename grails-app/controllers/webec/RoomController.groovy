@@ -1,6 +1,5 @@
 package webec
 
 class RoomController {
-
-    def index() { }
+    static scaffold = Room
 }

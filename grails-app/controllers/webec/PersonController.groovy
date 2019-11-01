@@ -1,6 +1,5 @@
 package webec
 
 class PersonController {
-
-    def index() { }
+    static scaffold = Person
 }
