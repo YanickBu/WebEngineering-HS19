@@ -3,8 +3,10 @@ package webec
 class BookingController {
 
     def probiere() {
-        def booker = Person.findByLastName('König')
-        def result = Booking.findAllByBooker(booker)*.room.unique()
+        // find the last names of all people that booked
+        // room named "1.313"
+        def booker = Person.findByLastName('Holz')
+        def result = Booking.findAllByBooker(booker)*.room
         render text: result.toString()
     }
 
