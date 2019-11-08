@@ -10,6 +10,10 @@ class BootStrap {
             return ;
         }
 
+        if(Environment.current != Environment.DEVELOPMENT) { // guard clause
+            return ;
+        }
+
         Person dierk  = new Person(firstName: "Dierk", lastName: "König").save(failOnError:true)
         Person dieter = new Person(firstName: "Dieter", lastName: "Holz").save(failOnError:true)
 
